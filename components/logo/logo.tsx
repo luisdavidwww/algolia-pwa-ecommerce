@@ -1,4 +1,5 @@
 import { Link } from '@ui/link/link'
+import LogoCC from '@/public/static/images/Logo/LogoCasagri.png';
 
 export function LogoSymbol() {
   return (

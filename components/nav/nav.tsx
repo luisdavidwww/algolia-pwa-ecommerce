@@ -4,7 +4,7 @@ import { NavTop } from './nav-top'
 export function Nav() {
   return (
     <nav>
-      <NavTop />
+      <NavTop/>
       <NavBottom />
     </nav>
   )

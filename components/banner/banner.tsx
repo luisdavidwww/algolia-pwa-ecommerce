@@ -7,7 +7,7 @@ import { Container } from '@/components/container/container'
 import { DummyWrapper } from '@/components/dummy-wrapper/dummy-wrapper'
 import { useIsMounted } from '@/hooks/useIsMounted'
 
-export type BannerSize = 'l' | 'm' | 's' | 'xl' | 'xs-large' | 'xs-small'
+export type BannerSize = 'l' | 'm' | 's' | 'xl' | 'xs-large' | 'xs-small' | 'xxl'
 
 export type BannerProps = {
   size: BannerSize
@@ -71,6 +71,8 @@ export function Banner({
             'h-44 laptop:h-56': size === 'l',
 
             'h-48 laptop:h-96': size === 'xl',
+
+            'h-12 laptop:h-96': size === 'xxl',
           },
           className
         )}

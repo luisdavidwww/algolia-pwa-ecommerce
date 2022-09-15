@@ -29,7 +29,7 @@ export function ProductsShowcase({
       <section className={classNames('py-4 laptop:py-16', className)}>
         <Container>
           {title && (
-            <h2 className="text-sm font-semibold tracking-[2px] uppercase mb-3 laptop:mb-6 laptop:ml-3 laptop:heading-3">
+            <h2 className="text-sm font-bold  uppercase mb-3 laptop:mb-6 laptop:ml-3 laptop:heading-3">
               {title}
             </h2>
           )}

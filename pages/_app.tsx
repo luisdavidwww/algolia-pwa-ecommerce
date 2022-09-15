@@ -19,6 +19,7 @@ import { AppLayout } from '@/layouts/app-layout'
 import { gaTrackingId, isDev, isProd } from '@/utils/env'
 import { scrollToTop } from '@/utils/scrollToTop'
 
+import logo from '@/public/static/images/Logo/LogoCasagri.png';
 import '@/styles/_index.css'
 
 export const Header = dynamic<HeaderProps>(() =>
@@ -42,11 +43,12 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <AppLayout>
       <Head>
-        <title>Spencer and Williams</title>
+        <title>Casagri </title>
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"
         />
+         <link rel="icon" type="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6"></link>
       </Head>
 
       {/* Google Analytics */}
@@ -68,9 +70,6 @@ export default function App({ Component, pageProps, router }: AppProps) {
         </>
       )}
 
-      <Banner size="xs-large" className="z-header" fullWidth={true}>
-        20% Off! Code: SPRING21 - Terms apply*
-      </Banner>
       <Header />
 
       <AnimatePresence exitBeforeEnter={true} onExitComplete={scrollToTop}>
