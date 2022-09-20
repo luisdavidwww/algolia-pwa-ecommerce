@@ -81,7 +81,7 @@ export function Catalogo() {
                         <Image
                         src={Agro}
                         alt="mi logo"
-                        height="250px"
+                        height="200px"
                         width="250px"
                     />
                         <div style={{}}>
