@@ -8,7 +8,15 @@ import {
   getStaticPropsPage,
   SearchPageLayout,
 } from '@/layouts/search-page-layout'
+
+
+
 import BannerImage from '@/public/static/images/home/BannerCasagri02.jpg'
+import BannerImage1 from '@/public/static/images/home/sorgo01.jpg'
+import BannerImage2 from '@/public/static/images/home/sorgo01.jpg'
+import { SetentaAnios } from '@/components/Section/Mas70'
+import { Catalogo } from '@/components/Section/catalogo-Productos'
+
 
 export default function Home(props: SearchPageLayoutProps) {
   return (
@@ -34,6 +42,10 @@ export default function Home(props: SearchPageLayoutProps) {
         classNameTitle="text-3xl font-normal tracking-wider leading-tight laptop:text-7xl"
       />
 
+      <SetentaAnios/>
+
+      <Catalogo/>
+
       <ProductsShowcase
         title="Productos Detacados"
         indexId="shoes"
@@ -41,14 +53,27 @@ export default function Home(props: SearchPageLayoutProps) {
         hitComponent={ProductCardHitShowcase}
       />
       <ProductsShowcase
-        title="Spring/summer 2021"
+        title="Recomendados para ti"
         indexId="spring-summer-2021"
         ruleContexts={['home-spring-summer-2021']}
         className="laptop:bg-gray-50"
         hitComponent={ProductCardHitShowcase}
       />
+
+      <Banner
+        size="xxl"
+        //title="Titulo<br />Random"
+        title=""
+        subtitle=""
+        image={BannerImage1}
+        imageAlt="Titulo Random - Develop Casagri 2022"
+        fullWidth={true}
+        //overlay={true}
+
+        classNameTitle="text-3xl font-normal tracking-wider leading-tight laptop:text-7xl"
+      />
       <ProductsShowcase
-        title="Recommended for you"
+        title="Destacados"
         indexId="recommended"
         query="jacket"
         hitComponent={ProductCardHitShowcase}
