@@ -72,7 +72,7 @@ export function Banner({
 
             'h-48 laptop:h-96': size === 'xl',
 
-            'h-12 laptop:h-96': size === 'xxl',
+            'h-50 laptop:h-96': size === 'xxl',
           },
           className
         )}

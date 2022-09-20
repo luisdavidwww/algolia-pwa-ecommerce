@@ -27,20 +27,33 @@ const Logo = dynamic<LogoProps>(() =>
 
 export const NavTop = memo(function NavTop() {
   return (
-    <div className="flex flex-col px-4 py-2 border-b border-neutral-light laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
+    <div className="flex flex-col px-4 py-2 laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
       <div className="flex justify-between w-full gap-3 laptop:mb-8">
         <div className="flex items-center">
           <Image
             src={logo}
             alt="mi logo"
-            width="63"
-            height="67"
+            width="73"
+            height="80"
           />
         </div>
 
         <div className="flex gap-48">
 
           <div className="flex items-center gap-6 laptop:gap-3">
+
+            <Button title="Cart" style={{marginRight:'20px', marginLeft: '20px'}}>
+              Inicio
+            </Button>
+
+            <Button title="Cart" style={{marginRight:'20px', marginLeft: '20px'}}>
+              Nosotros
+            </Button>
+
+            <Button title="Cart" style={{marginRight:'20px', marginLeft: '20px'}}>
+              Contáctanos
+            </Button>
+
             <Tablet>
               <Button title="Stores">
                 <IconLabel icon={PinDropIcon} label="Stores" />  
@@ -74,7 +87,7 @@ export const NavTop = memo(function NavTop() {
       
         </div>
       </div>
-
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
       <nav className="hidden laptop:block ">
         <ul className="hidden gap-20 uppercase laptop:flex  ">
           <NavItem label="Agroquímicos" href="" />
@@ -84,6 +97,9 @@ export const NavTop = memo(function NavTop() {
           <NavItem label="Salud Pública" href="" />
         </ul>
       </nav>
+
+      </div>
+      
     </div>
   )
 })
